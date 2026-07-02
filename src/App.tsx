@@ -1,15 +1,12 @@
 import React from 'react';
-import Hero from './components/Hero';
-import Benefits from './components/Benefits';
-import './App.css';
+import WifiManager from './components/WifiManager';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      <Hero />
-      <Benefits />
+      <WifiManager />
     </div>
   );
-}
+};
 
 export default App;
