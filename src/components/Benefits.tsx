@@ -1,24 +1,42 @@
 import React from 'react';
 import './Benefits.css';
 
-interface Benefit {
-  icon: string;
-  title: string;
-  description: string;
-}
+const benefitsData = [
+  {
+    icon: '🚀',
+    title: 'Performance Incrível',
+    description: 'Experimente a velocidade e a eficiência que seu projeto merece com nossa tecnologia de ponta.',
+  },
+  {
+    icon: '💡',
+    title: 'Fácil de Usar',
+    description: 'Interface intuitiva e design amigável para que você comece a produzir em minutos, sem complicações.',
+  },
+  {
+    icon: '🔒',
+    title: 'Segurança Robusta',
+    description: 'Seus dados e projetos estão protegidos com as mais avançadas medidas de segurança do mercado.',
+  },
+  {
+    icon: '🤝',
+    title: 'Suporte Dedicado',
+    description: 'Nossa equipe está sempre pronta para ajudar, garantindo que você tenha a melhor experiência possível.',
+  },
+  {
+    icon: '📈',
+    title: 'Escalabilidade Flexível',
+    description: 'Cresça sem limites. Nossa solução se adapta às suas necessidades, desde pequenos projetos a grandes empresas.',
+  },
+];
 
-interface BenefitsProps {
-  benefits: Benefit[];
-}
-
-const Benefits: React.FC<BenefitsProps> = ({ benefits }) => {
+const Benefits: React.FC = () => {
   return (
     <section className="benefits-section">
-      <div className="benefits-container">
+      <div className="container">
         <h2>Por que escolher nosso produto?</h2>
         <div className="benefits-grid">
-          {benefits.map((benefit, index) => (
-            <div key={index} className="benefit-item">
+          {benefitsData.map((benefit, index) => (
+            <div className="benefit-item" key={index}>
               <div className="benefit-icon">{benefit.icon}</div>
               <h3>{benefit.title}</h3>
               <p>{benefit.description}</p>
