@@ -1,19 +1,22 @@
 import React from 'react';
 import './Hero.css';
 
-const Hero: React.FC = () => {
+const HeroSection: React.FC = () => {
   return (
-    <section className="hero">
+    <section className="hero" aria-labelledby="hero-title">
       <div className="hero-content">
-        <h1>TESTE FUNCIONANDO</h1>
-        <p>
-          Descubra o futuro da tecnologia com nossas soluções inovadoras.
-          Simplifique sua vida, otimize seu trabalho e conecte-se com o mundo de uma nova maneira.
+        <h1 id="hero-title" className="hero-title">
+          Transforme sua ideia em realidade digital
+        </h1>
+        <p className="hero-subtitle">
+          Desenvolvimento web e mobile de alta qualidade para impulsionar seu negócio.
         </p>
-        <button className="hero-button">Saiba Mais</button>
+        <button className="hero-button" aria-label="Saiba mais sobre nossos serviços">
+          Saiba Mais
+        </button>
       </div>
     </section>
   );
 };
 
-export default Hero;
+export default HeroSection;
