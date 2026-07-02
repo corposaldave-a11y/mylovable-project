@@ -3,17 +3,14 @@ import './Hero.css';
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero" aria-labelledby="hero-title">
+    <section className="hero">
       <div className="hero-content">
-        <h1 id="hero-title" className="hero-title">
-          Transforme sua ideia em realidade digital
-        </h1>
-        <p className="hero-subtitle">
-          Desenvolvimento web e mobile de alta qualidade para impulsionar seu negócio.
+        <h1>TESTE FUNCIONANDO</h1>
+        <p>
+          Descubra o futuro da tecnologia com nossas soluções inovadoras.
+          Simplifique sua vida, otimize seu trabalho e conecte-se com o mundo de uma nova maneira.
         </p>
-        <button className="hero-button" aria-label="Entre em contato para iniciar seu projeto">
-          Entre em Contato
-        </button>
+        <button className="hero-button">Saiba Mais</button>
       </div>
     </section>
   );
