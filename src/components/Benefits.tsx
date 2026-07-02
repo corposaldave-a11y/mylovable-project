@@ -4,44 +4,43 @@ import './Benefits.css';
 const benefitsData = [
   {
     icon: '🚀',
-    title: 'Performance Incrível',
-    description: 'Experimente a velocidade e a eficiência que seu projeto merece com nossa tecnologia de ponta.',
+    title: 'Lançamento Rápido',
+    description: 'Coloque suas ideias no ar em tempo recorde com nossa plataforma otimizada.',
   },
   {
     icon: '💡',
-    title: 'Fácil de Usar',
-    description: 'Interface intuitiva e design amigável para que você comece a produzir em minutos, sem complicações.',
-  },
-  {
-    icon: '🔒',
-    title: 'Segurança Robusta',
-    description: 'Seus dados e projetos estão protegidos com as mais avançadas medidas de segurança do mercado.',
-  },
-  {
-    icon: '🤝',
-    title: 'Suporte Dedicado',
-    description: 'Nossa equipe está sempre pronta para ajudar, garantindo que você tenha a melhor experiência possível.',
+    title: 'Design Intuitivo',
+    description: 'Interfaces amigáveis e modernas que encantam seus usuários e facilitam a navegação.',
   },
   {
     icon: '📈',
     title: 'Escalabilidade Flexível',
-    description: 'Cresça sem limites. Nossa solução se adapta às suas necessidades, desde pequenos projetos a grandes empresas.',
+    description: 'Cresça sem preocupações. Nossa arquitetura se adapta às suas necessidades futuras.',
+  },
+  {
+    icon: '🔒',
+    title: 'Segurança Robusta',
+    description: 'Proteja seus dados e a privacidade de seus usuários com as melhores práticas de segurança.',
   },
 ];
 
 const Benefits: React.FC = () => {
   return (
     <section className="benefits-section">
-      <div className="container">
-        <h2>Por que escolher nosso produto?</h2>
+      <div className="benefits-container">
+        <h2>Por que escolher MyLovable Local?</h2>
+        <p className="benefits-subtitle">Descubra os diferenciais que nos tornam a melhor opção para o seu projeto.</p>
         <div className="benefits-grid">
           {benefitsData.map((benefit, index) => (
-            <div className="benefit-item" key={index}>
+            <div key={index} className="benefit-card">
               <div className="benefit-icon">{benefit.icon}</div>
               <h3>{benefit.title}</h3>
               <p>{benefit.description}</p>
             </div>
           ))}
+        </div>
+        <div className="benefits-cta">
+          <button className="cta-button">Comece Agora</button>
         </div>
       </div>
     </section>

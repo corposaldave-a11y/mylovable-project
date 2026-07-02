@@ -5,8 +5,8 @@ const Hero: React.FC = () => {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1>Bem-vindo ao Nosso Produto Incrível!</h1>
-        <p>A solução perfeita para todas as suas necessidades. Descubra o poder da inovação.</p>
+        <h1>Bem-vindo ao MyLovable Local</h1>
+        <p>Sua solução completa para gerenciar e expandir seu negócio local.</p>
         <button className="hero-button">Saiba Mais</button>
       </div>
     </section>
