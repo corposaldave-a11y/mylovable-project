@@ -3,11 +3,17 @@ import './Hero.css';
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero-section">
+    <section className="hero" aria-labelledby="hero-title">
       <div className="hero-content">
-        <h1>Bem-vindo ao MyLovable Local</h1>
-        <p>Sua solução completa para gerenciar e expandir seu negócio local.</p>
-        <button className="hero-button">Saiba Mais</button>
+        <h1 id="hero-title" className="hero-title">
+          Transforme sua ideia em realidade digital
+        </h1>
+        <p className="hero-subtitle">
+          Desenvolvimento web e mobile de alta qualidade para impulsionar seu negócio.
+        </p>
+        <button className="hero-button" aria-label="Entre em contato para iniciar seu projeto">
+          Entre em Contato
+        </button>
       </div>
     </section>
   );

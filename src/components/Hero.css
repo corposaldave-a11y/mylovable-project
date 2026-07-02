@@ -1,58 +1,61 @@
-.hero-section {
-  background: linear-gradient(135deg, #007bff, #00c6ff);
+.hero {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
   color: white;
   text-align: center;
   padding: 100px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 60vh; /* Garante que o hero ocupe pelo menos 60% da altura da viewport */
+  min-height: 60vh;
 }
 
 .hero-content {
   max-width: 800px;
 }
 
-.hero-content h1 {
+.hero-title {
   font-size: 3.5em;
   margin-bottom: 20px;
   line-height: 1.2;
+  font-weight: 700;
 }
 
-.hero-content p {
+.hero-subtitle {
   font-size: 1.5em;
   margin-bottom: 40px;
   opacity: 0.9;
 }
 
 .hero-button {
-  background-color: white;
-  color: #007bff;
+  background-color: #ffdd40; /* Cor de alto contraste */
+  color: #333; /* Cor do texto para alto contraste */
   padding: 15px 30px;
+  font-size: 1.2em;
   border: none;
   border-radius: 5px;
-  font-size: 1.2em;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  text-decoration: none; /* Garante que não haja sublinhado se for um link */
+  display: inline-block; /* Para que padding e margin funcionem como esperado */
 }
 
-.hero-button:hover {
-  background-color: #e2e6ea;
-  color: #0056b3;
-  transform: translateY(-2px);
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #ffe066; /* Levemente mais claro no hover/focus */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  outline: 3px solid #ffdd40; /* Foco visível */
+  outline-offset: 3px;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
-  .hero-section {
-    padding: 80px 15px;
-    min-height: 50vh;
-  }
-
-  .hero-content h1 {
+  .hero-title {
     font-size: 2.5em;
   }
 
-  .hero-content p {
+  .hero-subtitle {
     font-size: 1.2em;
   }
 
@@ -63,16 +66,15 @@
 }
 
 @media (max-width: 480px) {
-  .hero-section {
-    padding: 60px 10px;
-    min-height: 40vh;
+  .hero {
+    padding: 80px 15px;
   }
 
-  .hero-content h1 {
+  .hero-title {
     font-size: 2em;
   }
 
-  .hero-content p {
+  .hero-subtitle {
     font-size: 1em;
   }
 
