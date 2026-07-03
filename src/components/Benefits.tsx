@@ -2,52 +2,53 @@ import React from 'react';
 import './Benefits.css';
 
 const Benefits: React.FC = () => {
-  const benefitsData = [
-    {
-      icon: '🚀',
-      title: 'Performance Otimizada',
-      description: 'Sites rápidos e responsivos que encantam seus usuários e melhoram seu SEO.',
-    },
-    {
-      icon: '🎨',
-      title: 'Design Personalizado',
-      description: 'Criações únicas que refletem a identidade da sua marca e se destacam da concorrência.',
-    },
-    {
-      icon: '📱',
-      title: 'Responsividade Total',
-      description: 'Experiência perfeita em qualquer dispositivo, do desktop ao smartphone.',
-    },
-    {
-      icon: '🔒',
-      title: 'Segurança Reforçada',
-      description: 'Proteção avançada para seus dados e a tranquilidade de seus clientes.',
-    },
-    {
-      icon: '📈',
-      title: 'SEO Amigável',
-      description: 'Otimização para motores de busca que impulsiona sua visibilidade online.',
-    },
-    {
-      icon: '💡',
-      title: 'Suporte Dedicado',
-      description: 'Atendimento rápido e eficiente para todas as suas necessidades e dúvidas.',
-    },
-  ];
-
   return (
     <section className="benefits-section">
-      <div className="container">
-        <h2>Por que escolher a Lovable?</h2>
-        <p className="subtitle">Descubra as vantagens de ter um site desenvolvido por especialistas.</p>
+      <div className="benefits-container">
+        <h2 className="benefits-title">Por que escolher o MyLovable Local?</h2>
         <div className="benefits-grid">
-          {benefitsData.map((benefit, index) => (
-            <div className="benefit-card" key={index}>
-              <div className="benefit-icon">{benefit.icon}</div>
-              <h3>{benefit.title}</h3>
-              <p>{benefit.description}</p>
+          <div className="benefit-card">
+            <div className="benefit-icon">
+              <img src="https://www.lovable.dev/images/icon-fast.svg" alt="Ícone de Velocidade" />
             </div>
-          ))}
+            <h3>Geração Rápida</h3>
+            <p>Obtenha código funcional em segundos, não em horas. Nosso assistente é otimizado para velocidade e eficiência.</p>
+          </div>
+          <div className="benefit-card">
+            <div className="benefit-icon">
+              <img src="https://www.lovable.dev/images/icon-accurate.svg" alt="Ícone de Precisão" />
+            </div>
+            <h3>Código Preciso</h3>
+            <p>Geração de código com alta fidelidade às suas especificações, minimizando erros e retrabalho.</p>
+          </div>
+          <div className="benefit-card">
+            <div className="benefit-icon">
+              <img src="https://www.lovable.dev/images/icon-customizable.svg" alt="Ícone de Customização" />
+            </div>
+            <h3>Altamente Customizável</h3>
+            <p>Adapte o código gerado às suas necessidades exatas. Controle total sobre o estilo e a lógica.</p>
+          </div>
+          <div className="benefit-card">
+            <div className="benefit-icon">
+              <img src="https://www.lovable.dev/images/icon-integrations.svg" alt="Ícone de Integrações" />
+            </div>
+            <h3>Integrações Perfeitas</h3>
+            <p>Integra-se facilmente com suas ferramentas e fluxos de trabalho existentes, sem interrupções.</p>
+          </div>
+          <div className="benefit-card">
+            <div className="benefit-icon">
+              <img src="https://www.lovable.dev/images/icon-support.svg" alt="Ícone de Suporte" />
+            </div>
+            <h3>Suporte Dedicado</h3>
+            <p>Nossa equipe está pronta para ajudar com qualquer dúvida ou problema que você possa ter.</p>
+          </div>
+          <div className="benefit-card">
+            <div className="benefit-icon">
+              <img src="https://www.lovable.dev/images/icon-secure.svg" alt="Ícone de Segurança" />
+            </div>
+            <h3>Segurança em Primeiro Lugar</h3>
+            <p>Seus dados e projetos são tratados com a máxima segurança e confidencialidade.</p>
+          </div>
         </div>
       </div>
     </section>
