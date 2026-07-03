@@ -1,30 +1,22 @@
 import React from 'react';
 import './Hero.css';
 
-const Hero: React.FC = () => {
+const HeroSection: React.FC = () => {
   return (
-    <section className="hero-section">
+    <section className="hero" aria-labelledby="hero-title">
       <div className="hero-content">
-        <h1 className="hero-title">
-          Gere Código <span className="highlight">Instantaneamente</span> com MyLovable Local
+        <h1 id="hero-title" className="hero-title">
+          Transforme sua ideia em realidade digital
         </h1>
         <p className="hero-subtitle">
-          Seu assistente pessoal de IA para desenvolvimento, transformando ideias em código funcional em segundos.
+          Desenvolvimento de software sob medida para impulsionar seu negócio.
         </p>
-        <div className="hero-actions">
-          <button className="btn btn-primary">Comece Agora</button>
-          <button className="btn btn-secondary">Saiba Mais</button>
-        </div>
-      </div>
-      <div className="hero-image-container">
-        <img
-          src="https://www.lovable.dev/images/hero-mockup.webp"
-          alt="MyLovable Local Interface Mockup"
-          className="hero-image"
-        />
+        <button className="hero-button" aria-label="Saiba mais sobre nossos serviços">
+          Saiba Mais
+        </button>
       </div>
     </section>
   );
 };
 
-export default Hero;
+export default HeroSection;
